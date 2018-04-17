@@ -13,7 +13,7 @@ This script has only been tested on Windows 10(x64), using zotero 5 and Scrivene
 2. Install the [Better BibTeX plugin](https://retorque.re/zotero-better-bibtex/installation/)
 *Note: This will automatically change your quick-cite format - fear not! You can easily change it back by going into Zotero preferences*
 
-3. Download the .zip file from this website.
+3. Download the zotpick.7z file from this website.
 
 4. Unzip the folder
 
