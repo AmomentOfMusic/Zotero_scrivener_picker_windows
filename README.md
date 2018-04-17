@@ -25,7 +25,7 @@ This script has only been tested on Windows 10(x64), using zotero 5 and Scrivene
 
 8. Select the file named **zotpick-pandoc-win - Shortcut.lnk** and press okay. Exit the Options window.
 
-9. Cite away! You should now be able to call the picker by using the keyboard shortcut for bibliogrphy/citation set by Scrivener. You can check what the preset is by clicking the Format menu and seeing what is listed next to bibliography/citations. Search for the source you need by typing in author name or title, as you would using word or libreoffice plugin, and press enter when you are done. Voilà!
+9. Cite away! You should now be able to call the picker by using the keyboard shortcut for bibliogrphy/citation set by Scrivener. You can check what the preset is by clicking the Format menu and seeing what is listed next to bibliography/citations. Search for the source you need by typing in author name or title, as you would using word or libreoffice plugin. You can also add a colon and a number to include the page number. Press enter when you are done. Voilà!
 
 *Note: The preset shortcut in Scrivener didn't work for me, I think because there were two key combinations set for some reason... I fixed this problem by changing the keyboard shortcut under tools/options/keyboard. Search for "citations" and edit the keyboard shortcut as you please. I recommend CTR+G*
 
