@@ -13,7 +13,7 @@ This script has only been tested on Windows 10(x64), using zotero 5 and Scrivene
 2. Install the [Better BibTeX plugin](https://retorque.re/zotero-better-bibtex/installation/)
 *Note: This will automatically change your quick-cite format - fear not! You can easily change it back by going into Zotero preferences*
 
-3. Download the zotpick.7z file from this website.
+3. Download the **zotpick.7z file** from this website.
 
 4. Unzip the folder
 
@@ -28,7 +28,7 @@ This script has only been tested on Windows 10(x64), using zotero 5 and Scrivene
 9. Cite away! You should now be able to call the picker by using the keyboard shortcut for bibliogrphy/citation
 Search for the source you need by typing in author name or title, as you would using word or libreoffice plugin, and press enter when you are done. Voilà!
 
-*Note: The preset shortcut in Scrivener didn't work for me, I think because there were two key combinations set for somereason. I fixed this problem by changing the keyboard shortcut under tools/options/keyboard. Search for "citations" and edit the keyboard shortcut as you please. I recommend CTR+G*
+*Note: The preset shortcut in Scrivener didn't work for me, I think because there were two key combinations set for some reason... I fixed this problem by changing the keyboard shortcut under tools/options/keyboard. Search for "citations" and edit the keyboard shortcut as you please. I recommend CTR+G*
 
 10. When ready, compile scrivener into an odt file. Scan using Zotero as detailed on [this wepage](https://catherinepope.com/how-to-use-zotero-with-scrivener-part-2/).
 
