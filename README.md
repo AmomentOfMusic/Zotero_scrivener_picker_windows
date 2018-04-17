@@ -8,7 +8,7 @@ This allows you to call up a zotero picker from within Scrivener in Windows 10 u
 This script has only been tested on Windows 10(x64), using zotero 5 and Scrivener 1 for windows. Will test with Scrivener 3 when released later in 2018
 
 ## Instructions
-1. Install the [RTF/ODT plugin for zotero](https://zotero-odf-scan.github.io/zotero-odf-scan/). *Note: I had a bit of an issue installing this plugin with Zotero 5. If scannable cite is not showing up in the Zotero preferences [See this forum post]https://forums.zotero.org/discussion/57428/scannable-cite-not-showing-up-in-zotero-standalone for instructions on manually instructing the scannable cite format*
+1. Install the [RTF/ODT plugin for zotero](https://zotero-odf-scan.github.io/zotero-odf-scan/). *Note: I had a bit of an issue installing this plugin with Zotero 5. If scannable cite is not showing up in the Zotero preferences* [See this forum post]https://forums.zotero.org/discussion/57428/scannable-cite-not-showing-up-in-zotero-standalone *for instructions on manually instructing the scannable cite format*
 
 2. Install the [Better BibTeX plugin](https://retorque.re/zotero-better-bibtex/installation/)
 *Note: This will automatically change your quick-cite format - fear not! You can easily change it back by going into Zotero preferences*
@@ -33,12 +33,14 @@ This script has only been tested on Windows 10(x64), using zotero 5 and Scrivene
 
 ## Customizing script
 
-This script is currently set up to output the scannable cite format. In order to change format, open up the scrivener-picker.ps1 in a text editor (will open in notepad by default). Look for this line:
+This script is currently set up to output the scannable cite format. In order to change format, open up the scrivener-picker.ps1 file in a text editor (will open in notepad by default). Look for this line:
 
-$ref = invoke-expression "curl 'http://localhost:23119/better-bibtex/cayw?format=scannable-cite
+`$ref = invoke-expression "curl 'http://localhost:23119/better-bibtex/cayw?format=scannable-cite'"`
 
 You can edit the section which says "scannable-cite" to any of the formats listed [on the Better BibTeX webpage](https://retorque.re/zotero-better-bibtex/cayw/
 )
+
+I have had some issues with other formats not outputting italics. If this is the case, I'd recommend adding the command to copy the text to clipboard (as mentioned in the page linked above) and simply pasting the text as a workaround
 
 ## Acknowledgment
 Inspired by  [Dave Smith Zotpick applescript](https://github.com/davepwsmith/zotpick-applescript) using a modified version of the work by [Glfruit](https://gist.github.com/glfruit)
