@@ -18,7 +18,7 @@ try {
   $ref = invoke-expression "curl 'http://localhost:23119/better-bibtex/cayw?format=scannable-cite'"   
   [Microsoft.VisualBasic.Interaction]::AppActivate((Get-Process Scrivener).ID)
 
-  $SendKeysSpecialChars = '{','}','[',']','~','+','^','%'
+  $SendKeysSpecialChars = '{','}','[',']','~','+','^','%','.','(',')','?'
   $ToEscape = ($SendKeysSpecialChars|%{[regex]::Escape($_)}) -join '|'
   $citation = $ref.Content -replace "($ToEscape)",'{$1}'
   echo "$citation"
