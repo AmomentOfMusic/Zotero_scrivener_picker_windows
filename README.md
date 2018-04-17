@@ -41,5 +41,5 @@ $ref = invoke-expression "curl 'http://localhost:23119/better-bibtex/cayw?format
 You can edit the section which says "scannable-cite" to any of the formats listed [on the Better BibTeX webpage](https://retorque.re/zotero-better-bibtex/cayw/
 )
 
-##Acknowledgment
+## Acknowledgment
 Inspired by  [Dave Smith Zotpick applescript](https://github.com/davepwsmith/zotpick-applescript) using a modified version of the work by [Glfruit](https://gist.github.com/glfruit)
