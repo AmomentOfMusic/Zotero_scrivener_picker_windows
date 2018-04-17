@@ -36,9 +36,9 @@ Search for the source you need by typing in author name or title, as you would u
 
 This script is currently set up to output the scannable cite format. In order to change format, open up the scrivener-picker.ps1 in a text editor (will open in notepad by default). Look for this line:
 
-$ref = invoke-expression "curl 'http://localhost:23119/better-bibtex/cayw?format=**scannable-cite**
+$ref = invoke-expression "curl 'http://localhost:23119/better-bibtex/cayw?format=scannable-cite
 
-You can edit the section in bold to any of the format listed [on the Better BibTeX webpage](https://retorque.re/zotero-better-bibtex/cayw/
+You can edit the section which says "scannable-cite" to any of the formats listed [on the Better BibTeX webpage](https://retorque.re/zotero-better-bibtex/cayw/
 )
 
 ##Acknowledgment
