@@ -39,7 +39,7 @@ This script is currently set up to output the scannable cite format. In order to
 You can edit the section which says "scannable-cite" to any of the formats listed [on the Better BibTeX webpage](https://retorque.re/zotero-better-bibtex/cayw/
 )
 
-I have had some issues with other formats not outputting italics. If this is the case, I'd recommend adding the command to copy the text to clipboard (as mentioned in the page linked above) and simply pasting the text as a workaround
+I have had some issues with the form titled formatted-citation not outputting italics (such as in book titles). I suspect this has to do with the encoding that Better BibTeX outputs, but I'm not 100% sure. Other styles that do not require rich text encoding should be fine. If you are able to solve the issue with italics, please let me know!
 
 ## Acknowledgment
 Inspired by  [Dave Smith Zotpick applescript](https://github.com/davepwsmith/zotpick-applescript) using a modified version of the work by [Glfruit](https://gist.github.com/glfruit)
