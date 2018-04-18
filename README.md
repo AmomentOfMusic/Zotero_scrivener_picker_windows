@@ -11,7 +11,6 @@ This script has only been tested on Windows 10(x64), using zotero 5 and Scrivene
 1. Install the [RTF/ODT plugin for zotero](https://zotero-odf-scan.github.io/zotero-odf-scan/). *Note: I had a bit of an issue installing this plugin with Zotero 5. If scannable cite is not showing up in the Zotero preferences [See this forum post](https://forums.zotero.org/discussion/57428/scannable-cite-not-showing-up-in-zotero-standalone) for instructions on manually instructing the scannable cite format*
 
 2. Install the [Better BibTeX plugin](https://retorque.re/zotero-better-bibtex/installation/)
-*Note: This will automatically change your quick-cite format - fear not! You can easily change it back by going into Zotero preferences*
 
 3. Download the **zotpick.7z file** from this website.
 
