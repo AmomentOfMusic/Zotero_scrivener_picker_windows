@@ -8,7 +8,7 @@ This allows you to call up a zotero picker from within Scrivener in Windows 10 u
 This script has only been tested on Windows 10(x64), using zotero 5 and Scrivener 1 for windows. Will test with Scrivener 3 when released later in 2018
 
 ## Instructions
-1. Install the [RTF/ODT plugin for zotero](https://zotero-odf-scan.github.io/zotero-odf-scan/). *Note: I had a bit of an issue installing this plugin with Zotero 5. If scannable cite is not showing up in the Zotero preferences [see this forum post](https://forums.zotero.org/discussion/57428/scannable-cite-not-showing-up-in-zotero-standalone) for instructions on manually installing the scannable cite format*
+1. Install the [RTF/ODT plugin for zotero](https://zotero-odf-scan.github.io/zotero-odf-scan/).
 
 2. Install the [Better BibTeX plugin](https://retorque.re/zotero-better-bibtex/installation/)
 
