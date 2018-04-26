@@ -1,0 +1,1 @@
+@start /b powershell -ExecutionPolicy Unrestricted ./Scrivener-picker.ps1
