@@ -41,5 +41,9 @@ You can edit the section which says "scannable-cite" to any of the formats liste
 
 I have had some issues with formatted-citation (which outputs whatever style you have set as quick-cite in Zotero) not outputting italics (such as in book titles). I suspect this has to do with the encoding that Better BibTeX outputs, but I'm not 100% sure. Other styles that do not require rich text encoding should be fine. If you are able to solve the issue with italics, please let me know!
 
+## Issues
+
+If you having issues with this script, please let me know in the issues tab on this page. I only have basic level programming skills, so I can't promise an instinct fix, but I might be able to address some concerns, or at the very least point you in the right direction.
+
 ## Acknowledgment
 Inspired by  [Dave Smith Zotpick applescript](https://github.com/davepwsmith/zotpick-applescript) using a modified version of the work by [Glfruit](https://gist.github.com/glfruit)
