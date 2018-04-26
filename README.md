@@ -43,7 +43,7 @@ I have had some issues with formatted-citation (which outputs whatever style you
 
 ## Issues
 
-If you having issues with this script, please let me know in the issues tab on this page. I only have basic level programming skills, so I can't promise an instinct fix, but I might be able to address some concerns, or at the very least point you in the right direction.
+If you having issues with this script, please let me know in the issues tab on this page. I only have basic level programming skills, so I can't promise an instant fix, but I might be able to address some concerns, or at the very least point you in the right direction.
 
 ## Acknowledgment
 Inspired by  [Dave Smith Zotpick applescript](https://github.com/davepwsmith/zotpick-applescript) using a modified version of the work by [Glfruit](https://gist.github.com/glfruit)
