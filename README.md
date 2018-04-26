@@ -22,7 +22,7 @@ This script has only been tested on Windows 10(x64), using zotero 5 and Scrivene
 
 7. Navigate to wherever you previously placed the folder. This will appear empty at first. Click on the dropdown menu to change file type, to display **.lnk** files. 
 
-8. Select the file named **zotpick-pandoc-win - Shortcut.lnk** and press okay. Exit the Options window.
+8. Select the file named **zotpick-scannablecite - Shortcut.lnk** and press okay. Exit the Options window.
 
 9. Cite away! You should now be able to call the picker by using the keyboard shortcut for bibliogrphy/citation set by Scrivener. You can check what the preset is by clicking the **Format** menu and seeing what is listed next to **bibliography/citations.** Search for the source you need by typing in author name or title, as you would using word or libreoffice plugin. You can also add a colon and a number to include the page number. Press enter when you are done. Voilà!
 
