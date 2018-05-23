@@ -23,8 +23,8 @@ try {
   $citation = $ref.Content -replace "($ToEscape)",'{$1}'
   echo "$citation"
 
-  [System.Windows.Forms.SendKeys]::SendWait($citation)
   [Zotero]::SetForegroundWindow($ScrivenerHandle)
+  [System.Windows.Forms.SendKeys]::SendWait($citation)
   
 
 } catch {
