@@ -15,7 +15,7 @@ add-type -AssemblyName System.Windows.Forms
 
 try {
   $ScrivenerHandle = (Get-Process Scrivener).MainWindowHandle
-  $ref = invoke-expression "curl 'http://localhost:23119/better-bibtex/cayw?format=scannable-cite'"   
+  $ref = invoke-expression "curl 'http://localhost:23119/better-bibtex/cayw?format=scannable-cite' -usebasicparsing"   
   [Microsoft.VisualBasic.Interaction]::AppActivate((Get-Process Scrivener).ID)
 
   $SendKeysSpecialChars = '@','{','}','[',']','~','+','^','%','.','(',')','?'
