@@ -13,6 +13,7 @@ Add-Type @"
 
 add-type -AssemblyName microsoft.VisualBasic
 add-type -AssemblyName System.Windows.Forms
+import-module .\AutoItX.psd1
 
 if ((get-process "zotero" -ErrorAction SilentlyContinue) -eq $Null)
    {
