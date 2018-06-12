@@ -14,7 +14,7 @@ This script also requires that you install autolt (see link below). This is to g
 
 2. Install the [Better BibTeX plugin](https://retorque.re/zotero-better-bibtex/installation/)
 
-3. Install [Autolt](https://www.autoitscript.com/site/autoit/downloads/). As this script only requires the Cmdlet functions this installs, you might prefer to do a manual install, by [grabing the necessary files](https://www.autoitscript.com/forum/topic/173949-using-the-autoit-powershell-cmdlets/) and placing them in the the directory C:\Program Files (x86)\WindowsPowerShell\Modules\AutoItX, so that you don't install the extras that come with the installer. For the easiest route, however, just grab the full installer from the first link.
+3. Install [Autolt](https://www.autoitscript.com/site/autoit/downloads/). As this script only requires the Cmdlet functions this installs, you might prefer to do a manual install, by [grabing the necessary files](https://www.autoitconsulting.com/site/scripting/autoit-cmdlets-for-windows-powershell/) and placing them in the the directory C:\Program Files (x86)\WindowsPowerShell\Modules\AutoItX, so that you don't install the extras that come with the installer. For the easiest route, however, just grab the full installer from the first link.
 
 3. Download the **zotpick.7z file** from this website.
 
