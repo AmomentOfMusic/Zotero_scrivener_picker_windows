@@ -7,14 +7,12 @@ This allows you to call up a zotero picker from within Scrivener in Windows 10 u
 ## Prerequisites
 This script has only been tested on Windows 10(x64), using zotero 5 and Scrivener 1 for windows. Will test with Scrivener 3 when released later in 2018. It runs off of powershell, which comes with all modern Windows machines.
 
-This script also requires that you install autolt (see link below). This is to get around a Zotero bug in which the picker does not always appear on top when first called - unfortunately none of the in-built powershell commands did the trick. I will probably remove these elements in the future if this Zotero bug is fixed.
+This script also requires the Autoit cmdlet functions. This is to get around a Zotero bug in which the picker does not always appear on top when first called - unfortunately none of the in-built powershell commands did the trick. For ease of use, I have included them in the zipped folder. If you prefer, however, you can move them to a folder in the directory C:\Program Files (x86)\WindowsPowerShell\Modules\ - this is however, not necessary.
 
 ## Instructions
 1. Install the [RTF/ODT plugin for zotero](https://zotero-odf-scan.github.io/zotero-odf-scan/).
 
 2. Install the [Better BibTeX plugin](https://retorque.re/zotero-better-bibtex/installation/)
-
-3. Install [Autolt](https://www.autoitscript.com/site/autoit/downloads/). As this script only requires the Cmdlet functions this installs, you might prefer to do a manual install, by [grabing the necessary files](https://www.autoitconsulting.com/site/scripting/autoit-cmdlets-for-windows-powershell/) and placing them in the the directory C:\Program Files (x86)\WindowsPowerShell\Modules\AutoItX, so that you don't install the extras that come with the installer. For the easiest route, however, just grab the full installer from the first link.
 
 3. Download the **zotpick.7z file** from this website.
 
