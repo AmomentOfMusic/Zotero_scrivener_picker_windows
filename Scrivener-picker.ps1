@@ -1,6 +1,7 @@
 [CmdletBinding()]
 Param(
 )
+
 Add-Type @"
   using System;
   using System.Runtime.InteropServices;
@@ -12,47 +13,36 @@ Add-Type @"
 "@
 
 add-type -AssemblyName microsoft.VisualBasic
-add-type -AssemblyName System.Windows.Forms
+#add-type -AssemblyName System.Windows.Forms
 import-module .\AutoItX.psd1
 
 if ((get-process "zotero" -ErrorAction SilentlyContinue) -eq $Null)
-   {
-        Start-Process -filepath zotero.exe -windowstyle Minimized
+        
+    {    Start-Process -filepath zotero.exe -windowstyle minimized
+         $probe = Invoke-Expression "curl 'http://localhost:23119/better-bibtex/cayw?probe=true' -usebasicparsing" 
+         
+         while ($probe -notmatch "ready") {
+
+             start-sleep -Seconds 2
+             $probe = invoke-expression "curl 'http://localhost:23119/better-bibtex/cayw?probe=true' -usebasicparsing'"
+         }
+
     }
 
-else
-    { 
-        echo "Process is running" 
+else { 
+        echo "Zotero is running" 
      }
    
-$probe = Invoke-Expression "curl 'http://localhost:23119/better-bibtex/cayw?probe=true' -usebasicparsing"
-echo $probe
- 
- while ($probe -notmatch "ready") {
-        start-sleep -Seconds 2
-        $probe = invoke-expression "curl 'http://localhost:23119/better-bibtex/cayw?probe=true' -usebasicparsing'"
-    }
-    
-try {
-  
-  [Microsoft.VisualBasic.Interaction]::AppActivate((Get-Process zotero).ID)
-  $ref = invoke-expression "curl 'http://localhost:23119/better-bibtex/cayw?format=scannable-cite'-usebasicparsing"
-  
-  [Microsoft.VisualBasic.Interaction]::AppActivate((Get-Process Scrivener).ID)
 
-  $SendKeysSpecialChars = '@','{','}','[',']','~','+','^','%','.','(',')','?','.',':'
-  $ToEscape = ($SendKeysSpecialChars|%{[regex]::Escape($_)}) -join '|'
-  $citation = $ref.Content -replace "($ToEscape)",'{$1}'
-  echo "$citation"
+[Microsoft.VisualBasic.Interaction]::AppActivate((Get-Process Zotero).ID)
 
- $ScrivenerHandle = (Get-Process Scrivener).MainWindowHandle
+$ref = invoke-expression "curl 'http://localhost:23119/better-bibtex/cayw?format=scannable-cite' -usebasicparsing"
 
-  [Zotero]::SetForegroundWindow($ScrivenerHandle)
-  Show-AU3WinActivate($ScrivenerHandle)
-  Wait-AU3WinActive($ScrivenerHandle)
+[Microsoft.VisualBasic.Interaction]::AppActivate((Get-Process Scrivener).ID)
+$ScrivenerHandle = (Get-Process Scrivener).MainWindowHandle
 
-  [System.Windows.Forms.SendKeys]::SendWait($citation)
-  
-} catch {
- Write-Error "Failed to get active Window details. More Info: $_"
-}
+[Zotero]::SetForegroundWindow($ScrivenerHandle)
+Show-AU3WinActivate($ScrivenerHandle)
+Wait-AU3WinActive($ScrivenerHandle)
+
+Send-AU3Key -key $ref -mode 2
