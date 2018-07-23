@@ -26,7 +26,7 @@ This script also requires the Autoit cmdlet functions. This is to get around a Z
 
 7. Navigate to wherever you previously placed the folder. This will appear empty at first. Click on the dropdown menu to change file type, to display **.lnk** files. 
 
-8. Select the file named **zotpick-scannablecite - Shortcut.lnk** and press okay. Exit the Options window.
+8. Select the file named **zotpick-scannablecite - Shortcut.lnk** and press okay. Exit the Options window. 
 
 9. Cite away! You should now be able to call the picker by using the keyboard shortcut for bibliogrphy/citation set by Scrivener. If Zotero is not already open, this script will launch the application in a minimized window. The picker will launch once the betterbibtex plugin is fully loaded, which might take a couple of seconds. You can check what the keyboard shortcut preset is by clicking the **Format** menu and seeing what is listed next to **bibliography/citations.** Search for the source you need by typing in author name or title, as you would using word or libreoffice plugin. You can also add a colon and a number to include the page number. Press enter when you are done. Voilà! 
 
@@ -48,6 +48,8 @@ I have had some issues with formatted-citation (which outputs whatever style you
 ## Issues
 
 If you having issues with this script, please let me know in the issues tab on this page. I only have basic level programming skills, so I can't promise an instant fix, but I might be able to address some concerns, or at the very least point you in the right direction.
+
+One common issue is that the link file doesn't work. If you are having trouble with this script, first try deleting the link file. Right click on the bat file and click *create shortcut.* Once created, right click on the link file and go to properties. Next to *run* select from the drop down menu *minimized* and press okay. Set the link file as the bibliography/citation program.
 
 ## Contributions
 
