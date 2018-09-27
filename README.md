@@ -12,11 +12,11 @@ In order to scan the citations, you will also need to already have installed Lib
 This script also requires the Autoit cmdlet functions. This is to get around a Zotero bug in which the picker does not always appear on top when first called - unfortunately none of the in-built powershell commands did the trick. For ease of use, I have included the necessary files in the zipped folder. Just leave the files in the folder, and everything should work fine. If you prefer, however, you can move the 5 autoitx files to a folder entitled "AutoItX" in the directory C:\Program Files (x86)\WindowsPowerShell\Modules\ - this is however, not necessary.
 
 ## Instructions
-1. Install the [RTF/ODT plugin for zotero](https://zotero-odf-scan.github.io/zotero-odf-scan/).
+1. Install the [RTF/ODT plugin for zotero](https://zotero-odf-scan.github.io/zotero-odf-scan/)
 
 2. Install the [Better BibTeX plugin](https://retorque.re/zotero-better-bibtex/installation/)
 
-3. Download the **zotpick.7z file** from this website.
+3. Download the **zotpick.7z file** from this website
 
 4. Unzip the folder
 
@@ -49,7 +49,9 @@ I have had some issues with formatted-citation (which outputs whatever style you
 
 If you having issues with this script, please let me know in the issues tab on this page. I only have basic level programming skills, so I can't promise an instant fix, but I might be able to address some concerns, or at the very least point you in the right direction.
 
-One common issue is that the link file doesn't work. If you are having trouble with this script, first try deleting the link file. Right click on the bat file and click *create shortcut.* Once created, right click on the link file and go to properties. Next to *run* select from the drop down menu *minimized* and press okay. Set the link file as the bibliography/citation program.
+One common issue is that the link file doesn't work. If you are having trouble with this script, first try deleting the link file. Right click on the bat file and click *create shortcut.* Once created, right click on the link file and go to properties. Next to *run* select from the drop down menu *minimized* and press okay. Set the link file as the bibliography/citation program in Scrivener.
+
+The other common problem is with faulty installation of the ODF scannable cite plugin. This has been an ongoing problem with the plugin since the update to Zotero 5. First, to check whether or not this is the issue, in Zotero go to *edit>preferences>export*. Check the dropdown menu under "default format" to see if **scannable cite** is one of the available options. If it is not, then follow the instruction in [this forum post to perform a manual installation](https://forums.zotero.org/discussion/57428/scannable-cite-not-showing-up-in-zotero-standalone).
 
 ## Contributions
 
