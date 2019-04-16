@@ -5,7 +5,7 @@ This allows you to call up a zotero picker from within Scrivener in Windows 10 u
 ... or in other words, it allows you to input a citation without leaving scrivener or touching a mouse! This will input scannable cite citation codes, using [the type of picker you see in word and libreoffice](http://mossiso.com/wp-content/uploads/2012/04/zotero-new-view-find-citation.png), which can later be scanned by Zotero to create live citations. It takes a bit set-up but is well worth the effort when you are done!
 
 ## Prerequisites
-This script has only been tested on Windows 10(x64), using zotero 5 and Scrivener 1 for windows. Will test with Scrivener 3 when released later in 2018. It runs off of powershell, which comes with all modern Windows machines.
+This script has only been tested on Windows 10(x64), using zotero 5 and Scrivener 1 for windows. Will test with Scrivener 3 when released later this year. It runs off of powershell, which comes with all modern Windows machines.
 
 In order to scan the citations, you will also need to already have installed LibreOffice, as well as the LibreOffice Zotero plugin. 
 
