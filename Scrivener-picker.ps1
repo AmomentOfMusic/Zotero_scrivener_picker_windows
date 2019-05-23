@@ -19,7 +19,7 @@ import-module .\AutoItX.psd1
 if ((get-process "zotero" -ErrorAction SilentlyContinue) -eq $Null)
      
     {    Start-Process -filepath zotero.exe -windowstyle minimized
-         $probe = Invoke-Expression "curl 'http://localhost:23119/better-bibtex/cayw?probe=true' -usebasicparsing" 
+         $probe = "starting"
          
          while ($probe -notmatch "ready") 
          {  start-sleep -Seconds 1
