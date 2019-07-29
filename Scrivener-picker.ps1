@@ -20,29 +20,25 @@ if ((get-process "zotero" -ErrorAction SilentlyContinue) -eq $Null)
 {    
     Start-Process -filepath zotero.exe -WindowStyle Minimized
 
-     $probe = "starting"
+    $probe = "starting"
   
-     while ($probe -notmatch "ready") 
-     {
+    while ($probe -notmatch "ready") 
+    {
         start-sleep -Seconds 1
 
         try 
         {
             $probe = Invoke-expression "invoke-webrequest 'http://localhost:23119/better-bibtex/cayw?probe=true' -usebasicparsing -userAgent 'USER'"
             echo $probe.Content
-         }
+        }
 
-         catch 
-         { 
-         echo "waiting" 
-         }
-     }
+        catch 
+        { 
+            echo "waiting" 
+        }
+    }
  }
-
-else { 
-        echo "Zotero is running" 
-     }
-
+ 
 # Activate Zotero to ensure picker comes to the front
 [Microsoft.VisualBasic.Interaction]::AppActivate((Get-Process Zotero).ID)
 
