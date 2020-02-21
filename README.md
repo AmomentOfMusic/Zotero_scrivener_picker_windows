@@ -32,7 +32,7 @@ This script also requires the Autoit cmdlet functions. This is to get around a Z
 
 > *Note: The preset shortcut in Scrivener didn't work for me, I think because there were two key combinations set for some reason... I fixed this problem by changing the keyboard shortcut under **tools/options/keyboard**. Search for "citations" and edit the keyboard shortcut as you please. I recommend CTR+G*
 
-10. When ready, compile scrivener into an odt file. Scan using Zotero as detailed on [this wepage](https://catherinepope.com/how-to-use-zotero-with-scrivener-part-2/).
+10. When ready, compile scrivener into an odt file. Scan using Zotero as detailed in [this video](https://youtu.be/WO116kjtUow?t=357).
 
 ## Customizing script
 
