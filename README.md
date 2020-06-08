@@ -1,18 +1,34 @@
-# Zotero/Scrivener picker
+# A Zotero / Obsidian Picker Untill Obsidian Comes with an Integrated Solution
 
-This allows you to call up a zotero picker from within Scrivener in Windows 10 using a windowspowershell script by leveraging the framework provided by the Better BibTeX zotero plugin.
+Insert citations into Obsidian without leaving Obsidian or ever touching your mouse. This will input scannable cite citation codes, using [the type of picker you see in word and libreoffice](http://mossiso.com/wp-content/uploads/2012/04/zotero-new-view-find-citation.png), which can later be scanned by Zotero to create live citations. It takes a bit set-up but is well worth the effort when you are done!
 
-... or in other words, it allows you to input a citation without leaving scrivener or touching a mouse! This will input scannable cite citation codes, using [the type of picker you see in word and libreoffice](http://mossiso.com/wp-content/uploads/2012/04/zotero-new-view-find-citation.png), which can later be scanned by Zotero to create live citations. It takes a bit set-up but is well worth the effort when you are done!
+Works with Windows 10 only since is based on WindowsPowershell and AutoIt Cmdlets.
+
+The required steps are briefly as follows, more details below:
+1. Install Zotero and launch.
+2. Install [Better BibText plugin](https://retorque.re/zotero-better-bibtex/) and configure as per instruction.
+2. Install this script and assign a hotkey as per below instruction.
+3. In Obsidian, press the assigned hotkey. Zotero picker appears letting you search through your Zotero library instantly.
+4. Select the item required for citation. Add any necessary suffixes or prefixes.
+5. Press Enter to insert it into your Obsidian note in bracketed Pandoc format (which you can alter in the script if necessary to use with RTF/ODF Scan, for example).
+6. Once done with writing, export to whatever format required with Pandoc or your other faavorite converter (e.g. RTF/ODF-Scan).
+
+Credits:
+- Thanks to [Emilie](https://github.com/AmomentOfMusic) for her [Zotero/Scrivener Picker](https://github.com/AmomentOfMusic/Zotero_scrivener_picker_windows) for which this script is a quick-n-dirty fork.
+- Thanks to Emiliano Heyns, the creator of [Better BibTeX plugin for Zotero](https://retorque.re/zotero-better-bibtex/sponsoring/) and the community around it for this extremely helpful addition to Zotero.
+- Thanks to the creators of Zettelkasten / PIM / Writer app [Obsidian](https://obsidian.md/) for the fasscinating product that's just scratching the surface but promises a lot.
+
+Not a programmer, so forgive any inefficiencies. Otherwise let's hope that a native support for Zotero will soon be implemented in Obsidian in the same effecient manner as it's done in [Zettlr](https://www.zettlr.com/).
 
 ## Prerequisites
-This script has only been tested on Windows 10(x64), using zotero 5 and Scrivener 1 for windows. Will test with Scrivener 3 when released later this year. It runs off of powershell, which comes with all modern Windows machines.
+This script has only been tested on Windows 10 x64, Zotero 5 and Obsidian 0.6.7.
 
-In order to scan the citations, you will also need to already have installed LibreOffice, as well as the LibreOffice Zotero plugin. 
+In order to scan the citations and produce bibliography, you will also need to already have installed pandoc or LibreOffice, as well as the LibreOffice Zotero plugin, depending on which convertor your prefer.
 
 This script also requires the Autoit cmdlet functions. This is to get around a Zotero bug in which the picker does not always appear on top when first called - unfortunately none of the in-built powershell commands did the trick. For ease of use, I have included the necessary files in the zipped folder. Just leave the files in the folder, and everything should work fine. If you prefer, however, you can move the 5 autoitx files to a folder entitled "AutoItX" in the directory C:\Program Files (x86)\WindowsPowerShell\Modules\ - this is however, not necessary.
 
 ## Instructions
-1. Install the [RTF/ODT plugin for zotero](https://zotero-odf-scan.github.io/zotero-odf-scan/)
+1. Install [Pandoc](https://pandoc.org/installing.html) or the [RTF/ODT plugin for zotero](https://zotero-odf-scan.github.io/zotero-odf-scan/)
 
 2. Install the [Better BibTeX plugin](https://retorque.re/zotero-better-bibtex/installation/)
 
@@ -20,13 +36,9 @@ This script also requires the Autoit cmdlet functions. This is to get around a Z
 
 4. Unzip the folder
 
-5. Place this folder somewhere out of the way (a.k.a somewhere you won't accidentally delete it someday). I suggest leaving it in the Scrivener folder located at C:\Program Files (x86)\Scrivener but it doesn't actually matter, as long as you can find it later
+5. Place this folder somewhere out of the way (a.k.a somewhere you won't accidentally delete it someday). I suggest leaving it in the Documents folder located at C:\Users\%UserName%\Documents\ but it doesn't actually matter, as long as you can find it later
 
-6. In scrivener, open the **Options** window (F12). Under the **general** tab, click on *choose* under the *bibliography/citation Manager* section.
-
-7. Navigate to wherever you previously placed the folder. This will appear empty at first. Click on the dropdown menu to change file type, to display **.lnk** files. 
-
-8. Select the file named **zotpick-scannablecite - Shortcut.lnk** and press okay. Exit the Options window. 
+6. Select the file named **zotpick-scannablecite - Shortcut.lnk** and press okay. Exit the Options window. 
 
 9. Cite away! You should now be able to call the picker by using the keyboard shortcut for bibliogrphy/citation set by Scrivener. If Zotero is not already open, this script will launch the application in a minimized window. The picker will launch once the betterbibtex plugin is fully loaded, which might take a couple of seconds. You can check what the keyboard shortcut preset is by clicking the **Format** menu and seeing what is listed next to **bibliography/citations.** Search for the source you need by typing in author name or title, as you would using word or libreoffice plugin. You can also add a colon and a number to include the page number. Press enter when you are done. Voilà! 
 
