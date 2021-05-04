@@ -5,7 +5,7 @@ This allows you to call up a zotero picker from within Scrivener in Windows 10 u
 ... or in other words, it allows you to input a citation without leaving scrivener or touching a mouse! This will input scannable cite citation codes, using [the type of picker you see in word and libreoffice](http://mossiso.com/wp-content/uploads/2012/04/zotero-new-view-find-citation.png), which can later be scanned by Zotero to create live citations. It takes a bit set-up but is well worth the effort when you are done!
 
 ## Prerequisites
-This script has only been tested on Windows 10(x64), using zotero 5 and Scrivener 1 for windows. Will test with Scrivener 3 when released later this year. It runs off of powershell, which comes with all modern Windows machines.
+This script has only been tested on Windows 10(x64), using zotero 5 and both Scrivener 1 and 3 for Windows. It runs off of powershell, which comes with all modern Windows machines.
 
 In order to scan the citations, you will also need to already have installed LibreOffice, as well as the LibreOffice Zotero plugin. 
 
@@ -30,7 +30,7 @@ This script also requires the Autoit cmdlet functions. This is to get around a Z
 
 9. Cite away! You should now be able to call the picker by using the keyboard shortcut for bibliogrphy/citation set by Scrivener. If Zotero is not already open, this script will launch the application in a minimized window. The picker will launch once the betterbibtex plugin is fully loaded, which might take a couple of seconds. You can check what the keyboard shortcut preset is by clicking the **Format** menu and seeing what is listed next to **bibliography/citations.** Search for the source you need by typing in author name or title, as you would using word or libreoffice plugin. You can also add a colon and a number to include the page number. Press enter when you are done. Voilà! 
 
-> *Note: The preset shortcut in Scrivener didn't work for me, I think because there were two key combinations set for some reason... I fixed this problem by changing the keyboard shortcut under **tools/options/keyboard**. Search for "citations" and edit the keyboard shortcut as you please. I recommend CTR+G*
+> *Note: The preset shortcut in Scrivener didn't work for me, I think because there were two key combinations set for some reason... I fixed this problem by changing the keyboard shortcut under **tools/options/keyboard**. Search for "citations" and edit the keyboard shortcut as you please. I use CTR+G*
 
 10. When ready, compile scrivener into an odt file. Scan using Zotero as detailed in [this video](https://youtu.be/WO116kjtUow?t=357).
 
