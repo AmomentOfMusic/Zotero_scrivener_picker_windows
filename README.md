@@ -55,6 +55,8 @@ One common issue is that the link file doesn't work. If you are having trouble w
 
 The other common problem is with faulty installation of the ODF scannable cite plugin. This has been an ongoing problem with the plugin since the update to Zotero 5. First, to check whether or not this is the issue, in Zotero go to *edit>preferences>export*. Check the dropdown menu under "default format" to see if **scannable cite** is one of the available options. If it is not, then follow the instruction in [this forum post to perform a manual installation](https://forums.zotero.org/discussion/57428/scannable-cite-not-showing-up-in-zotero-standalone).
 
+Finally, if you enable the option to "Float" quick reference panels in Scrivener, citation will appear in the quick reference panel, not in the main editor. Still working on resolving this issue.
+
 ## Contributions
 
 Please feel free to contribute to this project if you feel that you can help.
