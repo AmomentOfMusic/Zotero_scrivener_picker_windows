@@ -14,7 +14,7 @@ In order to scan the citations, you will also need to already have installed Lib
 The script runs off of powershell, which comes with all modern Windows machines. This script also requires the Autoit cmdlet functions. This is to get around a Zotero bug in which the picker does not always appear on top when first called - unfortunately none of the in-built powershell commands did the trick. For ease of use, I have included the necessary files in the zipped folder. Just leave the files in the folder, and everything should work fine. If you prefer, however, you can move the 5 autoitx files to a folder entitled "AutoItX" in the directory C:\Program Files (x86)\WindowsPowerShell\Modules\ - this is however, not necessary.
 
 ## Instructions
-1. Install the [RTF/ODT plugin for zotero](https://zotero-odf-scan.github.io/zotero-odf-scan/)
+1. Install the [RTF/ODT plugin for zotero](https://zotero-odf-scan.github.io/zotero-odf-scan/) (Note: there have been ongoing issue with faulty installation of Scannable cite export style. Make sure to sure to read the "additional info" section on how to perform a manual install).
 
 2. Install the [Better BibTeX plugin](https://retorque.re/zotero-better-bibtex/installation/)
 
