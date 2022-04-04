@@ -22,7 +22,7 @@ The script runs off of powershell, which comes with all modern Windows machines.
 
 4. Unzip the folder
 
-5. Place this folder somewhere out of the way (a.k.a somewhere you won't accidentally delete it someday). I suggest leaving it in the Scrivener folder located at C:\Program Files (x86)\Scrivener but it doesn't actually matter, as long as you can find it later
+5. Place this folder somewhere out of the way (a.k.a somewhere you won't accidentally delete it someday). I suggest leaving it in the Scrivener folder located at C:\Program Files\Scrivener3 but it doesn't actually matter, as long as you can find it later.
 
 6. In scrivener, navigate to **file > Option**. Under the **General** tab, click *citations* in the side bar. Click on *choose*
 
