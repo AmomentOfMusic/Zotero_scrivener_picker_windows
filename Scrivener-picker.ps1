@@ -2,8 +2,9 @@
 Param(
 )
 
+
 add-type -AssemblyName microsoft.VisualBasic
-import-module .\AutoItX.psd1
+import-module $PsScriptRoot\AutoItX.psd1
 
 #Get handle of active window (Scrivener)
 $Activewindow = Get-AU3WinHandle -Title ''
@@ -21,7 +22,7 @@ if ((get-process "zotero" -ErrorAction SilentlyContinue) -eq $Null)
 
         try 
         {
-            $probe = Invoke-expression "invoke-webrequest 'http://localhost:23119/better-bibtex/cayw?probe=true' -usebasicparsing -userAgent 'USER'"
+            $probe = invoke-webrequest 'http://localhost:23119/better-bibtex/cayw?probe=true' -usebasicparsing -userAgent 'USER'
             echo $probe.Content
         }
 
@@ -31,16 +32,26 @@ if ((get-process "zotero" -ErrorAction SilentlyContinue) -eq $Null)
         }
     }
  }
+
+else 
+{ 
+    echo "Zotero is running" 
+}
  
+
 # Activate Zotero to ensure picker comes to the front
 [Microsoft.VisualBasic.Interaction]::AppActivate((Get-Process Zotero).ID)
 
+
 # Call CAYW picker
-$ref = invoke-expression "curl 'http://localhost:23119/better-bibtex/cayw?format=scannable-cite' -usebasicparsing -userAgent 'USER'"
+$ref = invoke-webrequest 'http://localhost:23119/better-bibtex/cayw?format=scannable-cite' -usebasicparsing -userAgent 'USER'
+
 
 # Set Scrivener as foreground window
 Show-AU3WinActivate($Activewindow)
 Wait-AU3WinActive($Activewindow)
+
+echo $ref
 
 # Send result to Scrivener window
 Send-AU3Key -key $ref -mode 2
