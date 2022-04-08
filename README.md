@@ -7,7 +7,7 @@ This allows you to call up a zotero picker from within Scrivener in Windows 10 u
 This script is written in such a way that it should also work with other plaintext editors that give you the option to trigger a script, as it checks for the current active window when launched, but has not been tested.
 
 ## Prerequisites
-This script has only been tested on Windows 10(x64), using zotero 5 and both Scrivener 1 and 3 for Windows. Instructions below are for Scrivener 3 - for Scrivener 1, the instructions are more or less the same except that the options menu is located under tools menu, not file. 
+This script has been tested on Windows 10(x64), using zotero 5 and 6, and both Scrivener 1 and 3 for Windows. Instructions below are for Scrivener 3 - for Scrivener 1, the instructions are more or less the same except that the options menu is located under tools menu, not file. 
 
 In order to scan the citations, you will also need to already have installed LibreOffice, as well as the LibreOffice Zotero plugin. 
 
