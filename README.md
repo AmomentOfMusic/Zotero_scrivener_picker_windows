@@ -30,9 +30,9 @@ The script runs off of powershell, which comes with all modern Windows machines.
 
 8. Select the file named **zotpick-scannablecite - Shortcut.lnk** and press okay. Exit the Options window. 
 
-9. Cite away! You should now be able to call the picker by using the keyboard shortcut for bibliogrphy/citation set by Scrivener. If Zotero is not already open, this script will launch the application in a minimized window. The picker will launch once the betterbibtex plugin is fully loaded, which might take a couple of seconds. You can check what the keyboard shortcut preset is by clicking the **Format** menu and seeing what is listed next to **bibliography/citations.** Search for the source you need by typing in author name or title, as you would using word or libreoffice plugin. You can also add a colon and a number to include the page number. Press enter when you are done. Voilà! 
+9. Cite away! You should now be able to call the picker by using the keyboard shortcut for bibliogrphy/citation set by Scrivener. If Zotero is not already open, this script will launch the application in a minimized window. The picker will launch once the betterbibtex plugin is fully loaded, which might take a couple of seconds. You can check what the keyboard shortcut preset is by clicking the **Insert** menu and seeing what is listed next to **bibliography/citations.** Search for the source you need by typing in author name or title, as you would using word or libreoffice plugin. You can also add a colon and a number to include the page number. Press enter when you are done. Voilà! 
 
-> *Note: The preset shortcut in Scrivener didn't work for me, I think because there were two key combinations set for some reason... I fixed this problem by changing the keyboard shortcut under **File > Options > Keyboard**. Search for "citations" and edit the keyboard shortcut as you please. I use CTR+G*
+> *Note: You can change the keyboard shortcut by going to **File > Options > Keyboard**. Search for "citations" and edit the keyboard shortcut as you please. I use CTR+G*
 
 10. When ready, compile scrivener into an odt file. Scan using Zotero as detailed in [this video](https://youtu.be/WO116kjtUow?t=357).
 
