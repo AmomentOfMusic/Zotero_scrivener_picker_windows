@@ -18,7 +18,7 @@ The script runs off of powershell, which comes with all modern Windows machines.
 
 2. Install the [Better BibTeX plugin](https://retorque.re/zotero-better-bibtex/installation/)
 
-3. Download the **zotpick.7z file** from this website
+3. Download the **zotpick.zip file** from this website
 
 4. Unzip the folder
 
